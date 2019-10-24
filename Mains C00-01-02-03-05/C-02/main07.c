@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_interative_factorial.c                          :+:      :+:    :+:   */
+/*   main06.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ritakaha <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: msales-a <msales-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/22 07:16:34 by ritakaha          #+#    #+#             */
-/*   Updated: 2019/10/22 16:00:17 by ritakaha         ###   ########.fr       */
+/*   Created: 2019/10/09 20:07:27 by msales-a          #+#    #+#             */
+/*   Updated: 2019/10/10 10:40:58 by msales-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_interative_factorial(int nb)
-{
-	int i;
-	int x;
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
-	x = nb;
-	i = 1;
-	if (x < 0)
-		return (0);
-	else if (x == 0)
-		x = 1;
-	else
-	{
-		while (i != nb)
-		{
-			x = x * i;
-			i++;
-		}
-	}
-	return (x);
+char *ft_strupcase(char *str);
+
+int main(void)
+{
+    char text[] = "Mateus Sales Albino";
+
+    printf("%s",ft_strupcase(text));
+    return (0);
 }

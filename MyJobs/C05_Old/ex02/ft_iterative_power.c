@@ -1,30 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_iterative_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ritakaha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/22 16:57:37 by ritakaha          #+#    #+#             */
-/*   Updated: 2019/10/22 21:02:03 by ritakaha         ###   ########.fr       */
+/*   Created: 2019/10/22 14:17:54 by ritakaha          #+#    #+#             */
+/*   Updated: 2019/10/22 20:54:27 by ritakaha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int		ft_recursive_power(int nb, int power);
-
-int	main(void)
+int		ft_iterative_power(int nb, int power)
 {
-	int a;
-	int b;
-	int x;
+	int i;
+	int k;
+	int m;
 
-	printf("Digite um número para base: ");
-	scanf("%i" , &a);
-	printf("Digite um número para expoente : ");
-	scanf("%i", &b);
-	x = ft_recursive_power(a, b);
-	printf("O valor é : %i\n" , x);
-	return(0);
+	i = nb;
+	if (power < 0)
+		return (0);
+	else if (power == 0)
+		return (i = 1);
+	else
+	{
+		k = 2;
+		m = nb;
+		while (k <= power)
+		{
+			m = m * i;
+			k++;
+		}
+		return (m);
+	}
 }

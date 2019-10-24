@@ -6,19 +6,15 @@
 /*   By: ritakaha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 12:43:48 by ritakaha          #+#    #+#             */
-/*   Updated: 2019/10/22 16:09:02 by ritakaha         ###   ########.fr       */
+/*   Updated: 2019/10/23 18:38:15 by ritakaha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_recursive_factorial(int nb)
 {
-	int x;
-	int y;
-
-	x = nb;
-	if (x == 1)
-		return (x);
-	else
-		y = x * ft_recursive_factorial(x - 1);
-	return (y);
+	if (nb < 0)
+		return (0);
+	if (nb == 0 || nb == 1)
+		return (1);
+	return (ft_recursive_factorial(nb - 1) * nb);
 }

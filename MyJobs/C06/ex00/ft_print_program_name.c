@@ -6,7 +6,7 @@
 /*   By: ritakaha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 18:00:09 by ritakaha          #+#    #+#             */
-/*   Updated: 2019/10/22 18:36:00 by ritakaha         ###   ########.fr       */
+/*   Updated: 2019/10/23 15:45:26 by ritakaha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int	main(int argc, char **argv)
 {
 	int i;
 
+	i = 0;
 	(void)argc;
 	while (argv[0][i] != 0)
 	{
